@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-shadow: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*HEADER*/
+.container-head ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.container-head li {
+    float: left;
+}
+.container-head li a img{
+    width: 50px;
+    height: auto;
+    
+}
+.img-a{
+    padding: 2px 9px !important;
+    margin-left: 5px;
+}
+
+.container-head li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 17px;
+    text-decoration: none;
+}
+
+.container-head li a:hover:not(.active) {
+    background-color: #111;
+    transition: .6s;
+    color: #cccccc;
+}
+
+.container-head .active {
+    background-color: #e23c30;
+}
+.container-head .active:hover{
+    background-color: #b31e13;
+    transition: .6s;
+    color: #cccccc;
+}
+/*Index*/
+
+.title{
+    text-align: center;
+    margin-top: 2%;
+    font-size: 290%;
+}
+.contenido{
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+    justify-items: left;
+    margin: 50px 30px;
+}
+.contenido a{
+    padding: 24px 8px;
+    text-decoration: none;
+    background-color: #d32519;
+    width: 160px;
+    color: white;
+    font-size: 150%;
+}
+.contenido a:hover{
+    background-color: #b31e13;
+    transition: .6s;
+    color: #cccccc;
+}
+.contenido h1{
+    font-size: 280%;
+}
+/*EDUCACION*/
+.EduDiv{
+    display: flex;
+    width: 90%;
+    background-color: rgba(94, 94, 94, 0.6);
+    justify-content: space-around;
+    margin: auto auto;
+    flex-wrap: wrap;
+    
+}
+.escuela{
+    padding: 10px;
+}
+.escuela h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 160%;
+}
+.escuela li{
+    list-style: none;
+    margin: 8px 15px;
+    padding-left: 5px;
+}
