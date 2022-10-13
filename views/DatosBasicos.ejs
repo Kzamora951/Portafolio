@@ -1,5 +1,56 @@
 <%- include('templates/header'); %>
 <body>
-    <h2>Estos son mis datos basicos</h2>
+    <h1 class="title title2">Estos son mis Datos</h1>
+    <br><br><br>
+    <div class="SMDiv ">
+        <div class="izq">
+            
+        </div>
+
+        <div class="datos">
+            <table>
+                <tr style="margin-bottom: 3px;">
+                    <td >Nombres:</td>
+                    <td>Kevin Santiago</td>
+                </tr>
+                <tr>
+                    <td>Apellidos:</td>
+                    <td>Zamora Ramirez</td>
+                </tr>
+                <tr>
+                    <td>Edad:</td>
+                    <td>17 Años</td>
+                </tr>
+                <tr>
+                    <td>Lugar de<br> Residencia:</td>
+                    <td>Bogota, Colombia</td>
+                </tr>
+                <tr>
+                    <td>Telefono:</td>
+                    <td><i id="p2">3053920815</i>
+                        <img onclick="copiarAlPortapapeles('p2')" src="https://cdn.icon-icons.com/icons2/935/PNG/512/copy-two-paper-sheets-interface-symbol_icon-icons.com_73283.png" alt="" class="copiar">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Correo:</td>
+                    <td><a id="p1">kevin98zamora@gmail.com</a>
+                    <img onclick="copiarAlPortapapeles('p1')" src="https://cdn.icon-icons.com/icons2/935/PNG/512/copy-two-paper-sheets-interface-symbol_icon-icons.com_73283.png" alt="" class="copiar">
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <br><br><br>
+    <script>
+       function copiarAlPortapapeles(id_elemento) {
+        var aux = document.createElement("input");
+        aux.setAttribute("value", document.getElementById(id_elemento).innerHTML);
+        document.body.appendChild(aux);
+        aux.select();
+        document.execCommand("copy");
+        document.body.removeChild(aux);
+}
+    </script>
 </body>
 </html>
