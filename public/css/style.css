@@ -5,7 +5,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 html{
-    background-image: linear-gradient(to left bottom, rgba(110, 110, 110, 0), rgba(94, 94, 94,.6));
+    background: linear-gradient(45deg, rgba(128,128,128,1) 0%, rgba(255,255,255,1) 27%, rgba(103,103,103,1) 100%);
     background-position: center;
     background-repeat: no-repeat;
     height: 100%;
@@ -68,7 +68,26 @@ html{
     color: #cccccc;
 }
 /*Index*/
-
+.container{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding: 2% 4%;
+}
+.info4{
+    display: grid;
+    place-items: center;
+    height: 220px;
+    margin: auto auto;
+    background-color: rgba(51, 51, 51,.7);
+    padding: 0 30px;
+    border-radius: 60px;
+    width: 35%;
+}
+.info4 p{
+    width: 90%;
+    font-size: 105%;
+}
 .title{
     text-align: center;
     margin-top: 2%;
@@ -174,6 +193,17 @@ html{
     font-size: 115%;
     text-align: justify;
 }
+.habilidad div img{
+    width: 80%;
+    height: auto;
+    display:block;
+    margin:auto;
+    margin-top: -10%;
+    filter: opacity(50%);
+}
+.habilidad div img[id="html"]{
+    margin-top: 0%;
+}
 /*SOBRE MI*/
 .SMDiv{
     width: 80%;
@@ -251,5 +281,60 @@ html{
     }
     .datos td{
         padding: 7px 2px;
+    }
+  }
+  /*404*/
+.DivVolver{
+    height: 500px;
+    display: grid;
+    place-items: center;
+}
+.volver{
+    text-decoration: none;
+    background-color: #b31e13;
+    padding: 40px 70px;
+    font-size: 150%;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.title3{
+    font-size: 240%;
+}
+.img404{
+    width: 550px;
+    height: auto;
+    filter: grayscale(.9);
+    float: left;
+    margin-top: -25%;
+    margin-left: 50px;
+}
+@media only screen and (max-width: 661px) {  
+    .img404{
+        width: 80%;
+    }
+    .title3{
+        font-size: 180%;
+    }
+  }
+  @media only screen and (max-width: 400px) {  
+    .img404{
+        width: 100%;
+        margin-left: 0;
+        margin-top: -30px;
+    }
+    .title3{
+        font-size: 100%;
+    }
+    .DivVolver{
+        height: 200px;
+    }
+    .volver{
+        padding: 20px 50px;
+    }
+  }
+  @media only screen and (max-width: 280px) { 
+    .volver{
+        font-size: 100%;
     }
   }
