@@ -52,6 +52,11 @@ html{
     padding: 20px 17px;
     text-decoration: none;
 }
+/*.container-head li a:link{
+    text-decoration: underline;
+    text-decoration-color: white;
+    transition: all 100s;
+}*/
 
 .container-head li a:hover:not(.active) {
     background-color: #111;
@@ -67,6 +72,19 @@ html{
     transition: .6s;
     color: #cccccc;
 }
+.right{
+    float: right !important;
+}
+@media only screen and (max-width: 900px) {
+    .container-head li{
+        float: initial;
+        display: grid;
+    }
+    .right{
+        float: none !important;
+    }
+  
+  }
 /*Index*/
 .container{
     width: 90%;
@@ -112,10 +130,27 @@ html{
     background-color: rgb(179, 30, 19,.8);
     transition: .6s;
     color: white;
+    width: 170px;
 }
 .contenido h1{
     font-size: 280%;
 }
+@media only screen and (max-width: 900px) {
+    .info4{
+        height: fit-content;
+        padding: 20px 5px;
+        border-radius: 20px;
+        margin-top: 50px;
+        margin-bottom: 150px;
+        width: 50%;
+        font-size: 120%;
+    }
+    .contenido{
+        display: none;
+    }
+    
+  
+  }
 /*EDUCACION*/
 .EduDiv{
     display: flex;
@@ -255,6 +290,7 @@ html{
 .copiar:hover{
         opacity: .5;
         transition: all .3s;
+        transform: scale(1.1);
 }
 @media only screen and (max-width: 1000px) {
   
